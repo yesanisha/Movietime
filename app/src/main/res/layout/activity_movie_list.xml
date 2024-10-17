@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MovieListActivity">
+
+    <!-- Toolbar with rounded corners, bigger logo, and shifted title -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_toolbar"
+        android:padding="10dp">
+
+        <!-- LinearLayout for logo and title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Logo on the left (increased size) -->
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/logo2"
+                android:backgroundTint="#031273"
+                android:contentDescription="App Logo"
+                android:layout_marginEnd="20dp"/>
+
+            <!-- Empty space to shift the title to the right -->
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <!-- Title shifted to the right -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Movie Time!   "
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/fragmentSpace"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Logout Button with light red background -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:text="Logout" />
+
+    <!-- LinearLayout for "Get Movies" and "Recommended" buttons with purple background -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <!-- "Get Movies" button with purple background -->
+        <Button
+            android:id="@+id/moviesButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:backgroundTint="#031273"
+        android:text="Get Movies"
+        android:layout_margin="5dp" />
+
+        <!-- "Recommended" button with purple background -->
+        <Button
+            android:id="@+id/recommendationButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:backgroundTint="#031273"
+        android:text="Recommended"
+        android:layout_margin="5dp" />
+    </LinearLayout>
+
+</LinearLayout>

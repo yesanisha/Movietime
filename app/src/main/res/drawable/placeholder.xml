@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background color for the placeholder -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#CCCCCC" /> <!-- Light gray background -->
+            <corners android:radius="8dp" /> <!-- Rounded corners -->
+        </shape>
+    </item>
+
+    <!-- Optional: You can add text as a placeholder -->
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@android:drawable/ic_menu_gallery" /> <!-- Default gallery icon -->
+    </item>
+
+</layer-list>

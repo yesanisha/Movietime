@@ -1,0 +1,6 @@
+<!-- res/drawable/rounded_toolbar.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#031273"/>
+
+    <corners android:radius="10dp"/>
+</shape>
