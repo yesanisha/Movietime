@@ -31,7 +31,7 @@ class RecommendationFragment : Fragment() {
     }
 
     private fun fetchPopularMovies() {
-        val apiKey = "5844db34069708ac04d208899a787505" // Replace with your TMDB API key
+        val apiKey = "api key" // Replace with your TMDB API key
 
         RetrofitInstance.api.getPopularMovies(apiKey).enqueue(object : Callback<MovieResponse> {
             override fun onResponse(call: Call<MovieResponse>, response: Response<MovieResponse>) {
