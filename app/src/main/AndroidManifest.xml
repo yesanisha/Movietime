@@ -35,6 +35,6 @@
 
         <meta-data
             android:name="TMDB_API_KEY"
-            android:value="5844db34069708ac04d208899a787505" />
+            android:value="api key" /> //insert api key
     </application>
 </manifest>
